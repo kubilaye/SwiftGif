@@ -112,9 +112,12 @@ extension UIImage {
 
         delay = delayObject as? Double ?? 0
 
+        // FIX: https://github.com/swiftgif/SwiftGif/issues/65
+        /*
         if delay < 0.1 {
             delay = 0.1 // Make sure they're not too fast
         }
+        */
 
         return delay
     }
